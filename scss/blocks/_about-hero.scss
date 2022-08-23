@@ -14,11 +14,26 @@ ul {
   padding: 64px 0;
 }
 .about-hero__box {
+  position: relative;
   max-width: 730px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
   text-align: center;
+}
+.about-hero__box::before {
+  position: absolute;
+  z-index: -1;
+  display: inline-block;
+  background-image: url("../../images/icons/draw.svg");
+  content: "";
+  width: 780px;
+  height: 780px;
+  left: 625px;
+  top: -698px;
+  border-radius: 50%;
+  // background: #36536B;
+  opacity: 0.15;
 }
 .about-hero__box-heading {
   font-family: "DM Serif Display";
