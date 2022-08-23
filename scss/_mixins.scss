@@ -22,3 +22,14 @@
   left: $left;
   content: "";
 }
+
+@mixin bg($bgrepeat: "no repeat", $bgposition, $bgsize: null) {
+  background-repeat: $bgrepeat;
+  background-position: $bgposition;
+  background-size: $bgsize;
+}
+
+@mixin link($color) {
+  color: $color;
+  text-decoration: none;
+}
