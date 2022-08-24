@@ -91,6 +91,7 @@
 .bold-text {
   font-weight: 700;
   color: #9cacd9;
+  text-decoration: none;
 }
 
 @include mobile-first(600px) {

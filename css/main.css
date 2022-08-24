@@ -743,6 +743,7 @@ body {
 .bold-text {
   font-weight: 700;
   color: #9cacd9;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 600px) {
