@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Contact</title>
+</head>
+<body>
+   <!-- Header -->
+   <header class="site-header">
+      <div class="container">
+         <div class="site-header__inner">
+            <div class="site-header__first">
+               <a class="logo" href="./index.html">
+                  <img
+                  class="logo__img"
+                  src="./images/icons/logo.svg"
+                  alt="logo-img"
+                  width="135"
+                  height="38"
+                  />
+               </a>
+               <nav class="sitenav">
+                  <button class="x-btn"></button>
+                  <ul class="sitenav__list">
+                     <li class="sitenav__item">
+                        <a class="sitenav__link" href="./price.html">Pricing</a>
+                     </li>
+                     <li class="sitenav__item">
+                        <a class="sitenav__link" href="./about.html">About</a>
+                     </li>
+                     <li class="sitenav__item">
+                        <a class="sitenav__link" href="./contact.html">Contact</a>
+                     </li>
+                     <li class="sitenav__item">
+                        <a class="schedule" href="#">Schedule a Demo</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="site-header__second">
+               <a class="schedule" href="#">Schedule a Demo</a>
+               <button class="burger-btn"></button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header -->
+   
+   <!-- Site main start -->
+   <main class="site-main">
+      
+      <!-- Contact section start -->
+      <section class="contact">
+         <div class="container">
+            <div class="contact__inner">
+               <h2 class="contact__heading">Submit a help request and we’ll get in touch shortly.</h2>
+               <div class="contact__conntaction-wrapper">
+                  <form class="contact__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+                     <input class="contact__form-input" type="text" name="user_name" minlength="3" placeholder="Name" required>
+                     <span class="contact__form-input-text">This field can’t be empty</span>
+                     <input class="contact__form-input" type="email" name="user_email" minlength="3" placeholder="Email Address" required>
+                     <span class="contact__form-input-text">This field can’t be empty</span>
+                     <input class="contact__form-input" type="text" name="user_company_name" minlength="3" placeholder="Company Name" required>
+                     <span class="contact__form-input-text">This field can’t be empty</span>
+                     <input class="contact__form-input" type="text" name="user_title" minlength="3" placeholder="Title" required>
+                     <span class="contact__form-input-text">This field can’t be empty</span>
+                     <textarea class="contact__form-textarea" name="user_message" minlength="5" placeholder="Message" cols="30" rows="10"></textarea>
+                     <div class="contact__form-cheacked">
+                        <label class="contact__form-label">
+                           <input class="visually-hidden" type="checkbox" name="confirm" required>
+                           <span class="contact__form-tick"></span>
+                        </label>
+                        <p class="contact__form-text">
+                           Stay up-to-date with company announcements and updates to our API
+                        </p>
+                     </div>
+                     <button class="contact__form-btn">Submit</button>
+                  </form>
+                  
+                  <div class="companys">
+                     <h3 class="companys__heading">Join the thousands of innovators already building with us</h3>
+                     
+                     <ul class="companys__links-list">
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/tesla-black.svg" alt="Tesla company logo" width="131" height="17">
+                           </a>
+                        </li>
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/microsoft-black.svg" alt="Microsoft company logo" width="148" height="31">
+                           </a>
+                        </li>
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/hp-black.svg" alt="HP company logo" width="142" height="27">
+                           </a>
+                        </li>
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/oracle-black.svg" alt="Oracle company logo" width="133" height="17">
+                           </a>
+                        </li>
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/google-black.svg" alt="Google company logo" width="97" height="33">
+                           </a>
+                        </li>
+                        <li class="companys__links-item">
+                           <a class="companys__link" href="#">
+                              <img src="./images/icons/nvida-black.svg" alt="Nvidia company logo" width="139" height="26">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact section finish -->
+      
+   </main>
+   <!-- Site main finish -->
+   
+   <script src="./js/main.js"></script>
+</body>
+</html>

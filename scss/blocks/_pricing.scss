@@ -1,0 +1,212 @@
+.pricing {
+   padding-top: 16px;
+   text-align: center;
+}
+
+.pricing__heading {
+   font-size: 32px;
+   line-height: 36px;
+   letter-spacing: -0.246154px;
+   margin-bottom: 48px;
+   color: var(--main-text-color);
+}
+
+.pricing__list {
+   @include ul-unstiled;
+   width: 100%;
+   max-width: 327px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 80px;
+}
+
+.pricing__item:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.pricing__item-title {
+   font-family: "DM Serif Display";
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: -0.184615px;
+   margin-bottom: 17px;
+   text-transform: capitalize;
+   color: var(--main-link-color);
+}
+
+.pricing__item-desc {
+   font-size: 15px;
+   line-height: 28px;
+   margin-bottom: 8px;
+   color: #6C8294;
+}
+
+.pricing__item-price {
+   font-family: "DM Serif Display";
+   font-size: 56px;
+   line-height: 72px;
+   letter-spacing: -0.430769px;
+   display: inline-block;
+   color: var(--main-text-color);
+}
+
+.pricing__item-line {
+   width: 100%;
+   height: 1px;
+   border: none;
+   margin: 24px 0;
+   background-color: #36536B;
+   opacity: 0.25;
+}
+
+.pricing__item-inner-list {
+   @include ul-unstiled;
+   text-align: left;
+}
+
+.pricing__item-inner-item {
+   width: 100%;
+   max-width: 134px;
+   margin-right: auto;
+   margin-left: auto;
+   opacity: 0.25;
+   padding-left: 36px;
+}
+
+.pricing__item-inner-item--mdf {
+   position: relative;
+   color: var(--main-text-color);
+   padding: 0;
+   opacity: 1;
+   
+   &::before {
+      @include mixin-before(null, 0, 0);
+      width: 14px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 24px;
+      background-image: url("../images/icons/tick.svg");
+      @include bg(no-repeat, center)
+   }
+}
+
+.pricing__item-link {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: -0.115385px;
+   color: var(--main-text-color);
+   display: inline-block;
+   padding: 16px 28px 14px 28px;
+   border: 1px solid var(--main-text-color);
+   border-radius: 24px;
+   text-transform: capitalize;
+   text-decoration: none;
+   transition: background-color 0.2s ease, color 0.2s ease;
+   
+   &:hover {
+      color: #FBFCFE;
+      background-color: var(--main-text-color);
+   }
+   
+   &:active {
+      opacity: 0.7;
+   }
+}
+
+@include mobile-first(768px) {
+   .pricing {
+      padding-top: 43px;
+   }
+   
+   .pricing__heading {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+      margin-bottom: 69px;
+   }
+   
+   .pricing__list {
+      width: 100%;
+      max-width: 689px;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 100px;
+   }
+   
+   .pricing__item:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 0;
+   }
+   
+   .pricing__item-title {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.184615px;
+      margin-bottom: 17px;
+      text-transform: capitalize;
+      color: var(--main-link-color);
+   }
+   
+   .pricing__item-desc {
+      margin-bottom: 19px;
+   }
+   
+   .pricing__item-price {
+      font-size: 48px;
+      line-height: 72px;
+      letter-spacing: -0.369231px;
+      display: inline-block;
+      color: var(--main-text-color);
+   }
+   
+   .pricing__item-line {
+      margin: 21px 0 24px 0;
+   }
+}
+
+@include mobile-first(992px) {
+   .pricing {
+      padding-top: 50px;
+      text-align: left;
+   }
+   
+   .pricing__heading {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.430769px;
+      margin-bottom: 72px;
+   }
+   
+   .pricing__list {
+      max-width: 1110px;
+      margin-bottom: 96px;
+      justify-content: space-between;
+   }
+   
+   .pricing__item:not(:last-child) {
+      margin-right: 30px;
+   }
+   
+   .pricing__item-title {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.246154px;
+      margin-bottom: 16px;
+   }
+   
+   .pricing__item-line {
+      margin: 24px 0;
+   }
+   
+   .pricing__item-inner-list {
+      @include ul-unstiled;
+      text-align: left;
+   }
+   
+   .pricing__item-inner-item {
+      margin-left: 0;
+   }
+}
