@@ -26,14 +26,36 @@ ul {
   text-align: center;
 }
 
+.about-hero__box::before {
+  position: absolute;
+  z-index: -1;
+  display: inline-block;
+  background-image: url("../images/icons/draw.svg");
+  content: "";
+  width: 780px;
+  height: 780px;
+  left: 625px;
+  top: -698px;
+  border-radius: 50%;
+  // background: #36536B;
+  opacity: 0.15;
+}
+
 .about-hero__box-heading {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
+
   text-align: center;
   letter-spacing: -0.246154px;
+
+  /* or 112% */
+
+  text-align: center;
+  letter-spacing: -0.246154px;
+
   color: #36536b;
 }
 .about-hero__list {
@@ -53,8 +75,15 @@ ul {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+
   text-align: center;
   letter-spacing: -0.184615px;
+
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: -0.184615px;
+
   color: #36536b;
 }
 .about-hero__text-wrapper {
@@ -90,10 +119,10 @@ ul {
     font-size: 48px;
     line-height: 56px;
     /* or 117% */
-    
+
     text-align: center;
     letter-spacing: -0.369231px;
-    
+
     color: #36536b;
   }
   .about-hero__list {
@@ -114,9 +143,9 @@ ul {
     font-size: 32px;
     line-height: 40px;
     /* identical to box height, or 125% */
-    
+
     letter-spacing: -0.246154px;
-    
+
     color: #36536b;
   }
   .about-hero__item-text {
@@ -139,6 +168,12 @@ ul {
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.430769px; 
+
+    /* or 100% */
+
+    letter-spacing: -0.430769px;
+
+
     color: #36536b;
   }
   .about-hero__list {
