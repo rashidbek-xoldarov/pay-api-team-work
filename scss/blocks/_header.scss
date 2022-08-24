@@ -1,15 +1,10 @@
-.site-header {
-}
-
+/* header */
 .site-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 32px;
-}
-
-.site-header__first {
 }
 
 .logo__img {
@@ -83,13 +78,24 @@
 
 .sitenav__link {
   @include link(#b9bec3);
-}
+  transition: 0.2s ease;
+  cursor: pointer;
 
-.site-header__second {
+  &:hover {
+    color: #36536b;
+    transition: 0.2s ease;
+  }
 }
 
 .schedule {
   display: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #da6d97;
+    transition: 0.2s ease;
+  }
 }
 
 .burger-btn {

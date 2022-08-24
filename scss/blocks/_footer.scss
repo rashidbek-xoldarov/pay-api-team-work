@@ -1,0 +1,130 @@
+/* footer */
+.site-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  background-color: #1b262f;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 180px;
+    background-image: url("../../images/icons/draw.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.1;
+  }
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 55px;
+}
+
+.site-footer-sitenav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include ul-unstiled;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.site-footer-sitenav__item {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+
+  &:not(:last-child) {
+    margin-bottom: 31px;
+  }
+}
+
+.site-footer-sitenav__link {
+  color: #fbfcfe;
+  text-decoration: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.2s ease;
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  @include ul-unstiled;
+}
+
+.social-item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social-link {
+  color: #fbfcfe;
+  transform: 0.2s ease;
+
+  &:hover {
+    color: #da6d97;
+    transform: 0.2s ease;
+  }
+}
+
+svg {
+  display: block;
+}
+
+@include mobile-first(768px) {
+  .site-footer {
+    &::after {
+      width: 390px;
+      height: 100%;
+      left: inherit;
+      right: 0;
+      background-position: top -136px left;
+    }
+  }
+
+  .site-footer__inner {
+    flex-direction: row;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+
+  .site-footer-sitenav__list {
+    flex-direction: row;
+    margin: 0 0 0 64px;
+  }
+
+  .site-footer-sitenav__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  .social-list {
+    margin-left: auto;
+  }
+}
+
+@include mobile-first(1440px) {
+  .site-footer {
+    &::after {
+      left: calc(50% + 330px);
+      right: inherit;
+    }
+  }
+}

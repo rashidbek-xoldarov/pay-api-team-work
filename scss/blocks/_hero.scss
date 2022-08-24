@@ -1,0 +1,211 @@
+/* Hero */
+
+.hero {
+  &::before {
+    @include mixin-before(absolute, 0, 0);
+    z-index: -1;
+    width: 100%;
+    height: 230px;
+    background-image: url("../../images/icons/draw.svg");
+    @include bg(no-repeat, bottom center);
+    opacity: 0.1;
+  }
+}
+
+.hero__inner {
+  padding: 264px 4px 80px;
+  background-image: url("../../images/icons/hero-phone.svg");
+  @include bg(no-repeat, top center);
+}
+
+.hero__info {
+  text-align: center;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.246154px;
+  color: #36536b;
+}
+
+.site-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.site-form__input {
+  margin-bottom: 16px;
+  padding: 16px 27px;
+  line-height: 18px;
+  border: none;
+  color: #36536b;
+  background-color: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536b;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 2px dashed #6464d3;
+    outline-offset: 2px;
+  }
+}
+
+.site-form__btn {
+  padding: 16px 25px 14px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  border: none;
+  background-color: #ba4270;
+  border-radius: 24px;
+  color: #fbfcfe;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #da6d97;
+    transition: 0.2s ease;
+  }
+}
+
+.hero__text {
+  line-height: 18px;
+  color: #6c8294;
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: 700;
+  color: #9cacd9;
+}
+
+@include mobile-first(600px) {
+  .hero__info {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .site-form {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include mobile-first(768px) {
+  .hero__inner {
+    padding: 364px 0 100px;
+    @include bg(no-repeat, top center, 159px 300px);
+  }
+
+  .hero__info {
+    max-width: 573px;
+  }
+
+  .hero__title {
+    margin-bottom: 22px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .site-form {
+    flex-direction: row;
+    max-width: 445px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+    background-color: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+  }
+
+  .site-form__input {
+    flex-grow: 1;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@include mobile-first(900px) {
+  .hero {
+    &::before {
+      right: 0;
+      left: inherit;
+      z-index: -1;
+      width: 620px;
+      height: 548px;
+      @include bg(no-repeat, left bottom);
+      opacity: 0.1;
+    }
+  }
+
+  .hero__inner {
+    padding: 100px 0 100px;
+    background-position: top 50px right 100px;
+  }
+
+  .hero__info {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .hero__form {
+    margin-left: 0;
+  }
+
+  .hero__text {
+    text-align-last: left;
+  }
+}
+
+@include mobile-first(992px) {
+  .hero__inner {
+    padding: 120px 0 150px;
+    background-position: top 42px right 100px;
+    background-size: 263px 500px;
+  }
+
+  .hero__info {
+    max-width: 546px;
+  }
+
+  .hero__title {
+    margin-bottom: 21px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .hero__text {
+    margin-left: 27px;
+  }
+}
+
+@include mobile-first(1440px) {
+  .hero {
+    &::before {
+      right: inherit;
+      left: calc(50% + 80px);
+    }
+  }
+}
