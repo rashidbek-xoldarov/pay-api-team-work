@@ -1,3 +1,5 @@
+/* Hero */
+
 .hero {
   &::before {
     @include mixin-before(absolute, 0, 0);
@@ -29,9 +31,6 @@
   line-height: 36px;
   letter-spacing: -0.246154px;
   color: #36536b;
-}
-
-.hero__form {
 }
 
 .site-form {
@@ -74,6 +73,13 @@
   background-color: #ba4270;
   border-radius: 24px;
   color: #fbfcfe;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #da6d97;
+    transition: 0.2s ease;
+  }
 }
 
 .hero__text {
